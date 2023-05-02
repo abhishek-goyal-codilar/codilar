@@ -1,38 +1,42 @@
-.App {
-  text-align: center;
+body {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+/* * {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: auto;
+} */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+*{
+  margin:0;
+  padding:0;
+  width:100%;
+  font-family:'Open Sans';
+  font-size: 14px;
 }
+:root{
+  --navbackground:#6e716e;
+  --navbarcolor:#ffffff;
+  --searchbarbackground:#ffffff;
+  --searchbarcolor:#757575;
+  --secondnavbarbackgroundcolor:#f0f0f0;
+  --secondnavbarcolor:#575757;
+  --linkcolor:#006bb4;
+  --linkname:#707070;
+  --bodytext:#333333;
+  --pricecolor:#575757;
+  --buttonbackgroundcolor:#1979c3;
+  --addcartbuttoncolor:#ffffff;
+  --addtolistcolor:#666666;
+  --menubodycolor:#6d6d6d;
+  --menutextcolor:#333333;
+  --footerbackgroundcolor:#f4f4f4;
+  --footertextcolor:#575757;
+  --footerserachbuttonbackgroundcolor:#1979c3;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+} */
