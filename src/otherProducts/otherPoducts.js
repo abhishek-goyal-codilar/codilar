@@ -1,9 +1,9 @@
 import React from "react";
-// import DEFAULT from "../assets/images/dummy.jpg";
-// import MOB from "../assets/images/myphone.jpg";
-// import LAPTOP from "../assets/images/laptops.jpg";
-// import CRICKET from "../assets/images/cricket_box.jpg";
-// import MYPHONE from "../assets/images/myphone.jpg";
+import DEFAULT from "../assets/images/dummy.jpg";
+import MOB from "../assets/images/myphone.jpg";
+import LAPTOP from "../assets/images/laptops.jpg";
+import CRICKET from "../assets/images/cricket_box.jpg";
+import MYPHONE from "../assets/images/myphone.jpg";
 import "./otherProducts.css";
 let products = [
   {

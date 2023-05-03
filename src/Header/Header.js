@@ -5,7 +5,7 @@ import { BsCart4 } from "react-icons/bs";
 
 const Header = () => {
   return (
-    <div>
+    <div className="header-parent">
       <div className="container">
         <ul>
           <li>

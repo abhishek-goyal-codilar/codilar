@@ -3,7 +3,7 @@ import "./navbar.css";
 
 const ProductNav = () => {
   return (
-    <div className="Container-nav">
+    <>
       <div className="parent-container-nav">
         <div className="container-nav">
           <div className="separator-nav">
@@ -73,7 +73,7 @@ const ProductNav = () => {
           <p>Crown Summit Bakpack</p>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
