@@ -6,25 +6,28 @@ import { BsCart4 } from "react-icons/bs";
 const Header = () => {
   return (
     <div className="header-parent">
-      <div className="container">
-        <ul>
-          <li>
-            <span>welcome to codilar</span>
-          </li>
-          <li>
-            <a href="/home">Sign In</a>
-          </li>
-          <li>
-            <span>or</span>
-          </li>
-          <li>
-            <a href="/home">Create an Account</a>
-          </li>
-          <li>
-            <a href="/home">vijayawadda</a>
-          </li>
-        </ul>
+      <div className="header-container">
+        <div className="container">
+          <ul>
+            <li>
+              <span>welcome to codilar</span>
+            </li>
+            <li>
+              <a href="/home">Sign In</a>
+            </li>
+            <li>
+              <span>or</span>
+            </li>
+            <li>
+              <a href="/home">Create an Account</a>
+            </li>
+            <li>
+              <a href="/home">vijayawadda</a>
+            </li>
+          </ul>
+        </div>
       </div>
+
       <div className="header-content">
         <div className="logo">
           <img src={logoImage} alt="" className="starLogo" />

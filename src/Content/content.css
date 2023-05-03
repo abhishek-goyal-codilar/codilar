@@ -17,14 +17,14 @@
   font-size: 40px;
   color: var(--menutextcolor);
   font-weight: 300;
-  /* padding-bottom: 15px; */
 }
 .product-image {
-  /* padding-right: 50px;
-    padding-left: 120px; */
+  width: 700px;
+  height: 700px;
 }
 .bag-Img {
-  width: auto;
+  width: 700px;
+  height: 700px;
 }
 .review {
   color: #006bb4;
@@ -33,9 +33,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 75%;
   border-bottom: 1px solid #c1c1c1;
-  padding: 0px 0px 15px;
 }
 .price-tag {
   display: flex;
@@ -49,7 +47,7 @@
 }
 .instock {
   font-weight: 600;
-  float: right;
+  float: left;
 }
 
 .quanity {
@@ -86,7 +84,6 @@
   display: flex;
   align-items: center;
   letter-spacing: 0.05em;
-  /* width: 50%; */
 }
 
 .button-parent {

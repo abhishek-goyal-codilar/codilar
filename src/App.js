@@ -5,7 +5,7 @@ import "./App.css";
 import Content from "./Content/Content";
 import OtherProduct from "./otherProducts/otherPoducts";
 // import Utility from "./Utility/Utility";
-import Api from "./Utility/Utility";
+// import Api from "./Utility/Utility";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <Header />
       <Navbar />
       <Content />
-      <Api />
+      {/* <Api /> */}
       <OtherProduct />
       <Footer />
     </div>

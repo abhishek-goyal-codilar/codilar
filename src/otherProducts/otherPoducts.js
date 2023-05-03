@@ -70,19 +70,19 @@ let products = [
     description: "ourlaptop",
     priceFrom: "₹68.00",
     priceTo: "₹1,767.00",
-    img: "https://testing-mage.codilar.dev/media/catalog/pro…8b1e5b7759603f3935d5f1970ad53d/g/n/gnlyofeo_1.jpg",
+    img: `${LAPTOP}`,
   },
   {
     description: "cricket box",
     priceFrom: "₹68.00",
     priceTo: "₹110.00",
-    img: "https://testing-mage.codilar.dev/media/catalog/pro…8b1e5b7759603f3935d5f1970ad53d/g/n/gnlyofeo_1.jpg",
+    img: `${CRICKET}`,
   },
   {
     description: "myphone",
     priceFrom: "₹34.00",
     priceTo: "₹72.00",
-    img: "https://testing-mage.codilar.dev/media/catalog/pro…8b1e5b7759603f3935d5f1970ad53d/g/n/gnlyofeo_1.jpg",
+    img: `${MYPHONE}`,
   },
   {
     description: "Bundle product",
@@ -94,7 +94,7 @@ let products = [
     description: "mob",
     priceFrom: "₹34.00",
     priceTo: "₹72.00",
-    img: "https://testing-mage.codilar.dev/media/catalog/pro…8b1e5b7759603f3935d5f1970ad53d/g/n/gnlyofeo_1.jpg",
+    img: `${MOB}`,
   },
 ];
 
@@ -108,14 +108,16 @@ const OtherProduct = (props) => {
         {products.map((item, index) => {
           return (
             <div className="otherProductsContainer" key={index}>
-              <img
-                className="productimage"
-                alt={item.description}
-                src={item.img}
-              ></img>
-              <p>{item.description}</p>
-              <p>{item.priceFrom}</p>
-              <p>{item.priceTo}</p>
+              <div className="product-display-info">
+                <img
+                  className="productimage"
+                  alt={item.description}
+                  src={item.img}
+                ></img>
+                <p>{item.description}</p>
+                <p>{item.priceFrom}</p>
+                <p>{item.priceTo}</p>
+              </div>
             </div>
           );
         })}

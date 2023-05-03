@@ -7,58 +7,60 @@ const ProductNav = () => {
       <div className="parent-container-nav">
         <div className="container-nav">
           <div className="separator-nav">
-            <ul className="menu-items">
-              <li>
-                <a href="#" className="link">
-                  What's New
-                </a>
-              </li>
-              <li>
-                <select className="selector">
-                  <option>Men</option>
-                </select>
-              </li>
-              <li>
-                <select className="selector">
-                  <option> Gear</option>
-                </select>
-              </li>
-              <li>
-                <select className="selector">
-                  <option>Training</option>
-                </select>
-              </li>
-              <li>
-                <select className="selector">
-                  <option>Sale</option>
-                </select>
-              </li>
-              <li>
-                <select className="selector">
-                  <option>Organic</option>
-                </select>
-              </li>
-              <li>
-                <select className="selector">
-                  <option>CPL T-shirt</option>
-                </select>
-              </li>
-              <li>
-                <select className="selector">
-                  <option>Mobile</option>
-                </select>
-              </li>
-              <li>
-                <select className="selector">
-                  <option>Cars</option>
-                </select>
-              </li>
-              <li>
-                <select className="selector">
-                  <option>Means Fashion</option>
-                </select>
-              </li>
-            </ul>
+            <nav className="navigation">
+              <ul className="menu-items">
+                <li className="nav">
+                  <a href="#" className="link">
+                    <span>What's New</span>
+                  </a>
+                </li>
+                <li className="nav">
+                  <a href="#" className="selector">
+                    <span>Men</span>
+                  </a>
+                </li>
+                <li className="nav">
+                  <a href="#" className="selector">
+                    <span> Gear</span>
+                  </a>
+                </li>
+                <li className="nav">
+                  <a href="#" className="selector">
+                    <span>Training</span>
+                  </a>
+                </li>
+                <li className="nav">
+                  <a href="#" className="selector">
+                    <span>Sale</span>
+                  </a>
+                </li>
+                <li className="nav">
+                  <a href="#" className="selector">
+                    <span>Organic</span>
+                  </a>
+                </li>
+                <li className="nav">
+                  <a href="#" className="selector">
+                    <span>CPL T-shirt</span>
+                  </a>
+                </li>
+                <li className="nav">
+                  <a href="#" className="selector">
+                    <span>Mobile</span>
+                  </a>
+                </li>
+                <li className="nav">
+                  <a href="#" className="selector">
+                    <span>Cars</span>
+                  </a>
+                </li>
+                <li className="nav">
+                  <a href="#" className="selector">
+                    <span>Means Fashion</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>

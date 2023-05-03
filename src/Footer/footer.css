@@ -3,7 +3,6 @@
   margin-top: auto;
   padding-bottom: 25px;
 }
-/* hi hh*/
 .footer-content {
   display: flex;
   flex-direction: row;
@@ -19,9 +18,9 @@
 
 .footer-links {
   display: inline-block;
-  padding-right: 50px;
   vertical-align: top;
-  /* float: left; */
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .nav-item {
@@ -74,9 +73,7 @@
   cursor: pointer;
   display: inline-block;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  /* font-weight: 600; */
   padding: 7px 15px;
-  /* font-size: 1.4rem; */
   box-sizing: border-box;
   vertical-align: middle;
 }
