@@ -24,9 +24,11 @@ body {
   width: auto;
 }
 
-ul {
+.header-ul {
   display: flex;
   flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .header-li {
   list-style-type: none;

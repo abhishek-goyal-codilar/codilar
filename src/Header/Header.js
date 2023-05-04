@@ -8,7 +8,7 @@ const Header = () => {
     <div className="header-parent">
       <div className="header-container">
         <div className="container">
-          <ul>
+          <ul className="header-ul">
             <li className="header-li">
               <span className="header-span">welcome to codilar</span>
             </li>
