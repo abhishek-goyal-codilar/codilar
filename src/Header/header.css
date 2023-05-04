@@ -93,12 +93,12 @@ a {
   }
 
   .header-search {
-    max-width: 500px;
+    /* max-width: 500px; */
     margin: 0;
-    padding: 20px;
+    /* padding: 20px; */
   }
 
   .cart-icon {
-    padding-right: 60px;
+    /* padding-right: 60px; */
   }
 }

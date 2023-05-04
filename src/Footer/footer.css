@@ -51,7 +51,7 @@
 }
 .newsletter {
   display: inline-block;
-  padding-right: 50px;
+  /* padding-right: 50px; */
   padding-top: 20px;
   vertical-align: top;
 }

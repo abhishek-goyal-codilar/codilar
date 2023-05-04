@@ -41,7 +41,7 @@ const ProductNav = () => {
                 </li>
                 <li className="nav">
                   <a href="#" className="selector">
-                    <span>CPL T-shirt</span>
+                    <span>T-shirt</span>
                   </a>
                 </li>
                 <li className="nav">
@@ -56,7 +56,7 @@ const ProductNav = () => {
                 </li>
                 <li className="nav">
                   <a href="#" className="selector">
-                    <span>Means Fashion</span>
+                    <span>Mens Fashion</span>
                   </a>
                 </li>
               </ul>
