@@ -12,7 +12,6 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  /* align-items: start; */
   justify-content: center;
   gap: 25px;
 }
@@ -24,6 +23,7 @@
 .block-title {
   display: block;
   margin-bottom: 10px;
+  padding-left: 45px;
 }
 
 .block-title .strong {
@@ -45,9 +45,11 @@
 }
 .priceFrom {
   font-weight: bolder;
+  font-size: 15px;
 }
 .priceTo {
   font-weight: bolder;
+  font-size: 15px;
 }
 .product_name {
   /* font-weight: bolder; */

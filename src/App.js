@@ -6,6 +6,7 @@ import Content from "./Content/Content";
 import OtherProduct from "./otherProducts/otherPoducts";
 // import Utility from "./Utility/Utility";
 // import Api from "./Utility/Utility";
+import CopyRight from "./Copyright/Copyright";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       {/* <Api /> */}
       <OtherProduct />
       <Footer />
+      <CopyRight />
     </div>
   );
 }
