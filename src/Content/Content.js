@@ -77,7 +77,7 @@ const Content = () => {
                 </div>
 
                 <div className="quantity-parent">
-                  <label className="quanity"> Qty</label>
+                  <label className="quanity">Qty</label>
                 </div>
                 <div className="quanity-number">
                   <input type="text" className="quantitynumber" value={1} />
