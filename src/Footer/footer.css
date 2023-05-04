@@ -24,8 +24,16 @@
 }
 
 .nav-item {
-  padding-top: 15px;
+  color: #575757;
+  padding-top: 10px;
+  font-size: 14px;
   list-style-type: none;
+}
+.footer-linkss {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .footer-content .widget-block .footer-links .nav-item li {

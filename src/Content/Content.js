@@ -83,7 +83,7 @@ const Content = () => {
                   <input type="text" className="quantitynumber" value={1} />
                 </div>
                 <div className="button-parent">
-                  <button className="addtocart"> Add to Cart</button>
+                  <button className="addtocart">Add to Cart</button>
                 </div>
 
                 <div className="wishlist">
