@@ -58,22 +58,20 @@ const Content = () => {
                 <img src={item.image.url} alt="bag" className="bag-Img" />
               </div>
               <div className="product-description">
-                <p className="display-title"> {item.name}</p>
+                <h1 className="display-title">{item.name}</h1>
                 <a href="#" className="review">
                   Be the first to review this product
                 </a>
-                <div className="parent-price">
-                  <div>
-                    <p className="price">
-                      ₹ {item.price_range.maximum_price.final_price.value}
-                    </p>
-                  </div>
+                <div className="product-info-price">
+                  <p className="price">
+                    ₹ {item.price_range.maximum_price.final_price.value}
+                  </p>
                   <div className="price-tag">
                     <div className="instock-parent">
                       <p className="instock"> IN STOCK</p>
                     </div>
                     <div>
-                      <p>SKU#: 24-MB03</p>
+                      <p className="SKU">SKU#: 24-MB03</p>
                     </div>
                   </div>
                 </div>
