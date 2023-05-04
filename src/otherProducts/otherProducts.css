@@ -12,7 +12,8 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  align-items: start;
+  /* align-items: start; */
+  justify-content: center;
   gap: 25px;
 }
 .productimage {
@@ -48,9 +49,9 @@
 .priceTo {
   font-weight: bolder;
 }
-.message {
-  font-weight: bolder;
-  padding: 0px 0px 30px 10px;
+.product_name {
+  /* font-weight: bolder; */
+  text-align: start;
 }
 @media only screen and (max-width: 768px) {
   .parent-container {

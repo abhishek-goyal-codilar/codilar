@@ -7,91 +7,91 @@ import MYPHONE from "../assets/images/myphone.jpg";
 import "./otherProducts.css";
 let products = [
   {
-    description: "Fusion Backpack",
+    product_name: "Fusion Backpack",
     priceFrom: "₹59",
     priceTo: "",
     img: "https://testing-mage.codilar.dev/media/catalog/pro…8b1e5b7759603f3935d5f1970ad53d/g/n/gnlyofeo_1.jpg",
   },
   {
-    description: "Wayfarer Messenger",
+    product_name: "Wayfarer Messenger",
     priceFrom: "₹45",
     priceTo: "",
     img: "https://testing-mage.codilar.dev/media/catalog/pro…8b1e5b7759603f3935d5f1970ad53d/g/n/gnlyofeo_1.jpg",
   },
   {
-    description: "Rival Field Messenger",
+    product_name: "Rival Field Messenger",
     priceFrom: "₹74",
     priceTo: "",
     img: "https://testing-mage.codilar.dev/media/catalog/pro…8b1e5b7759603f3935d5f1970ad53d/g/n/gnlyofeo_1.jpg",
   },
   {
-    description: "Impulse Duffle",
+    product_name: "Impulse Duffle",
     priceFrom: "₹74",
     priceTo: "",
     img: "https://testing-mage.codilar.dev/media/catalog/pro…8b1e5b7759603f3935d5f1970ad53d/g/n/gnlyofeo_1.jpg",
   },
   {
-    description: "Push It Messenger Bag",
+    product_name: "Push It Messenger Bag",
     priceFrom: "₹45",
     priceTo: "",
     img: "https://testing-mage.codilar.dev/media/catalog/pro…8b1e5b7759603f3935d5f1970ad53d/g/n/gnlyofeo_1.jpg",
   },
   {
-    description: "Overnight Duffle",
+    product_name: "Overnight Duffle",
     priceFrom: "₹45",
     priceTo: "",
     img: "https://testing-mage.codilar.dev/media/catalog/pro…8b1e5b7759603f3935d5f1970ad53d/g/n/gnlyofeo_1.jpg",
   },
   {
-    description: "TABLE_LAMP",
+    product_name: "TABLE LAMP",
     priceFrom: "₹2,110.00",
     priceTo: "₹2,222.00",
     img: "https://testing-mage.codilar.dev/media/catalog/pro…8b1e5b7759603f3935d5f1970ad53d/g/n/gnlyofeo_1.jpg",
   },
   {
-    description: "MyLaptop",
+    product_name: "My Laptop",
     priceFrom: "₹23,000.00",
     priceTo: "₹29,000.00",
     img: "https://testing-mage.codilar.dev/media/catalog/pro…8b1e5b7759603f3935d5f1970ad53d/g/n/gnlyofeo_1.jpg",
   },
   {
-    description: "battery",
+    product_name: "Battery",
     priceFrom: "₹72.00",
-    priceTo: "₹70.00 Regular Price",
+    priceTo: "₹70.00",
     img: "https://testing-mage.codilar.dev/media/catalog/pro…8b1e5b7759603f3935d5f1970ad53d/g/n/gnlyofeo_1.jpg",
   },
   {
-    description: "Fusion Backpack",
+    product_name: "Fusion Backpack",
     priceFrom: "59",
     priceTo: "",
     img: "https://testing-mage.codilar.dev/media/catalog/pro…8b1e5b7759603f3935d5f1970ad53d/g/n/gnlyofeo_1.jpg",
   },
   {
-    description: "ourlaptop",
+    product_name: "Our laptop",
     priceFrom: "₹68.00",
     priceTo: "₹1,767.00",
     img: `${LAPTOP}`,
   },
   {
-    description: "cricket box",
+    product_name: "Cricket box",
     priceFrom: "₹68.00",
     priceTo: "₹110.00",
     img: `${CRICKET}`,
   },
   {
-    description: "myphone",
+    product_name: "Myphone",
     priceFrom: "₹34.00",
     priceTo: "₹72.00",
     img: `${MYPHONE}`,
   },
   {
-    description: "Bundle product",
+    product_name: "Bundle product",
     priceFrom: "₹340.00",
     priceTo: "₹450.00",
     img: `${DEFAULT}`,
   },
   {
-    description: "mob",
+    product_name: "Mob",
     priceFrom: "₹34.00",
     priceTo: "₹72.00",
     img: `${MOB}`,
@@ -114,9 +114,9 @@ const OtherProduct = (props) => {
                   alt={item.description}
                   src={item.img}
                 ></img>
-                <p>{item.description}</p>
-                <p>{item.priceFrom}</p>
-                <p>{item.priceTo}</p>
+                <p className="product_name">{item.product_name}</p>
+                <p className="priceFrom">{item.priceFrom}</p>
+                <p className="priceTo">{item.priceTo}</p>
               </div>
             </div>
           );

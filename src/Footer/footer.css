@@ -62,17 +62,19 @@
   padding: 7px 15px;
   font-size: 15px;
   border-radius: 2px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
 }
 
-.newsletter-submit {
-  background-image: none;
+.newsletter-button {
   background: #1979c3;
   border-radius: 2px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
   border: 1px solid #1979c3;
   color: #ffffff;
   cursor: pointer;
-  display: inline-block;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
   padding: 7px 15px;
   box-sizing: border-box;
   vertical-align: middle;

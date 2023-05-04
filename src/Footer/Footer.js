@@ -43,7 +43,7 @@ const Footer = () => {
             className="footer-textbox"
             placeholder="Enter your email address"
           />
-          <button className="newsletter-submit">Subscribe</button>
+          <button className="newsletter-button">Subscribe</button>
         </div>
       </div>
     </div>

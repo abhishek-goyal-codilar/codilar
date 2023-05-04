@@ -27,7 +27,6 @@ const Header = () => {
           </ul>
         </div>
       </div>
-
       <div className="header-content">
         <div className="logo">
           <img src={logoImage} alt="" className="starLogo" />

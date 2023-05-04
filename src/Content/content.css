@@ -22,12 +22,14 @@
   margin-bottom: 10px;
 }
 .product-image {
-  width: 700px;
-  height: 700px;
+  /* max-width: 100%;
+  display: block;
+  height: auto; */
 }
 .bag-Img {
-  width: 700px;
-  height: 700px;
+  width: 100%;
+  max-width: 700px;
+  height: auto;
 }
 .review {
   color: #006bb4;
