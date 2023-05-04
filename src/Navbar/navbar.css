@@ -2,7 +2,6 @@
   width: 100%;
   margin: auto;
   background: #f0f0f0;
-  position: sticky;
 }
 
 .separator-nav {
@@ -73,9 +72,21 @@
 .next {
   color: #6e716e;
 }
+.hamburger {
+  display: none;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
 
 /* Media queries */
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   /* Collapse the menu items into a hamburger menu */
   .separator-nav {
     justify-content: space-between;
@@ -141,6 +152,22 @@
   .menu-open .menu-items li:last-child a {
     border-bottom: none;
   }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
 
-  /* Responsive styles for the navbar */
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
+  }
 }
