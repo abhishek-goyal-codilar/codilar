@@ -87,10 +87,12 @@ const Content = () => {
                 </div>
 
                 <div className="wishlist">
-                  <div>
-                    <p className="wishlist-text">♥ ADD TO WISH LIST</p>
+                  <div className="icon-class">
+                    <i class="fa-sharp fa-solid fa-heart"></i>
+                    <p className="wishlist-text">ADD TO WISH LIST</p>
                   </div>
-                  <div>
+                  <div className="icon-class">
+                    <i class="fa-sharp fa-solid fa-chart-simple"></i>
                     <p className="wishlist-text">ADD TO COMPARE</p>
                   </div>
                 </div>
