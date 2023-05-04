@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
 .product-container-content {
   box-sizing: border-box;
   margin-left: auto;
@@ -14,6 +16,7 @@
 }
 
 .display-title {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 40px;
   font-weight: 300;
   margin-bottom: 10px;
@@ -50,6 +53,7 @@
 .instock {
   font-weight: 600;
   float: right;
+  margin-bottom: 0px;
 }
 .SKU {
   float: right;
@@ -101,7 +105,42 @@
   color: #666;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
+  .product-display {
+    display: flex;
+    flex-direction: column;
+  }
+  .product-image {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .parent-price {
+    width: 100%;
+  }
+
+  .product-container {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .display-title {
+    height: 34.4px;
+    font-size: 40px;
+  }
+  .addtocart {
+    height: 51.6px;
+    width: 100%;
+  }
+  .wishlist {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .wishlist-text {
+    padding-right: 0px;
+  }
+}
+
+/* @media only screen and (max-width: 768px) {
   .product-display {
     display: flex;
     flex-direction: column;
@@ -137,38 +176,4 @@
   .parent-price {
     width: 100%;
   }
-}
-@media (min-width: 481px) and (max-width: 768px) {
-  .product-display {
-    display: flex;
-    flex-direction: column;
-  }
-  .product-image {
-    padding-right: 0px;
-    padding-left: 0px;
-  }
-  .parent-price {
-    width: 100%;
-  }
-
-  .product-container {
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-  .display-title {
-    height: 34.4px;
-    font-size: 40px;
-  }
-  .addtocart {
-    height: 51.6px;
-    width: 100%;
-  }
-  .wishlist {
-    width: 80%;
-    margin: 0 auto;
-  }
-
-  .wishlist-text {
-    padding-right: 0px;
-  }
-}
+} */

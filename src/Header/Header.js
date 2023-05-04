@@ -9,19 +9,19 @@ const Header = () => {
       <div className="header-container">
         <div className="container">
           <ul>
-            <li>
-              <span>welcome to codilar</span>
+            <li className="header-li">
+              <span className="header-span">welcome to codilar</span>
             </li>
-            <li>
+            <li className="header-li">
               <a href="/home">Sign In</a>
             </li>
-            <li>
+            <li className="header-li">
               <span>or</span>
             </li>
-            <li>
+            <li className="header-li">
               <a href="/home">Create an Account</a>
             </li>
-            <li>
+            <li className="header-li">
               <a href="/home">vijayawadda</a>
             </li>
           </ul>

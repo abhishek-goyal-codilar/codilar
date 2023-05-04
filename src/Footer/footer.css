@@ -25,6 +25,7 @@
 
 .nav-item {
   padding-top: 15px;
+  list-style-type: none;
 }
 
 .footer-content .widget-block .footer-links .nav-item li {
@@ -57,7 +58,6 @@
 
 .footer-textbox {
   border: 1px solid black;
-  /* height: 2rem; */
   box-sizing: border-box;
   padding: 7px 15px;
   font-size: 15px;
@@ -76,4 +76,7 @@
   padding: 7px 15px;
   box-sizing: border-box;
   vertical-align: middle;
+}
+
+@media only screen and (max-width: 768px) {
 }

@@ -88,7 +88,7 @@ let products = [
     description: "Bundle product",
     priceFrom: "₹340.00",
     priceTo: "₹450.00",
-    img: "https://testing-mage.codilar.dev/media/catalog/pro…8b1e5b7759603f3935d5f1970ad53d/g/n/gnlyofeo_1.jpg",
+    img: `${DEFAULT}`,
   },
   {
     description: "mob",

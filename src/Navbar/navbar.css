@@ -85,7 +85,6 @@
   background-color: #101010;
 }
 
-/* Media queries */
 @media only screen and (max-width: 768px) {
   /* Collapse the menu items into a hamburger menu */
   .separator-nav {
