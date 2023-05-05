@@ -4,34 +4,55 @@ import { useState, useEffect } from "react";
 
 const Content = () => {
   const [data, setData] = useState(null);
+  const [selectedButton, setSelectedButton] = useState(null);
+  const [displayText, setDisplayText] = useState("");
+  const [disabled, setDisabled] = useState(false);
+
+  const handleButtonClick = (buttonId, text) => {
+    setSelectedButton(buttonId);
+    setDisplayText(text);
+  };
 
   useEffect(() => {
     ApiUtil(`
-      query {
-        products(
-          filter: { sku: { eq: "24-MB03" } }
-          pageSize: 20
-          currentPage: 1
-          sort: {}
-        ) {
-          items {
-            name
-            image {
-              url
-            }
-            price_range {
-              maximum_price {
-                final_price {
-                  value
-                }
+    query {
+      products(
+        filter: {            
+          sku: { eq: "24-MB03" } }
+        pageSize: 20
+        currentPage: 1
+        sort: {}
+      ) {
+        items {
+          name
+          image {
+            url
+          }
+          price_range {
+            maximum_price {
+              final_price {
+                value
               }
             }
-            description {
-              html
+          }
+          description {
+            html
+          }
+          reviews {
+            items {
+              summary
+              ratings_breakdown {
+                value
+              }
+              nickname
+              created_at
+              text
             }
           }
         }
       }
+    }
+    
     `);
     async function ApiUtil(query) {
       const response = await fetch("/graphql", {
@@ -97,6 +118,96 @@ const Content = () => {
                   </div>
                 </div>
               </div>
+            </div>
+            <div>
+              <button
+                disabled={disabled}
+                className="product-info-more-button"
+                onClick={() =>
+                  handleButtonClick(
+                    1,
+                    <div
+                      dangerouslySetInnerHTML={{
+                        __html: item.description.html,
+                      }}
+                    />
+                  )
+                }
+              >
+                Details
+              </button>
+              <button
+                className="product-info-more-button"
+                onClick={() =>
+                  handleButtonClick(
+                    2,
+                    <div>
+                      <table>
+                        <tbody>
+                          <tr>
+                            <th>Activity</th>
+                            <td>
+                              Gym, Hiking, Overnight, School, Trail, Travel,
+                              Urban
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>Style</th>
+                            <td>Backpack</td>
+                          </tr>
+                          <tr>
+                            <th>Material</th>
+                            <td class="col data">Nylon, Polyester</td>
+                          </tr>
+                          <tr>
+                            <th>Strap/Handle</th>
+                            <td class="col data">Adjustable, Double, Padded</td>
+                          </tr>
+                          <tr>
+                            <th>Features</th>
+                            <td>
+                              Audio Pocket, Waterproof, Lightweight, Reflective,
+                              Laptop Sleeve
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  )
+                }
+              >
+                More Information
+              </button>
+              <button
+                className="product-info-more-button"
+                onClick={() =>
+                  handleButtonClick(
+                    3,
+                    <div>
+                      <div class="block-title">
+                        <p className="Customer-reviews">Customer Reviews</p>
+                      </div>
+                      {item.reviews.items.map((review) => {
+                        return (
+                          <ol>
+                            <li>
+                              <p>{review.summary}</p>
+                              <p>{review.value}</p>
+                              <p>{review.name}</p>
+                              <p>{review.text}</p>
+                              <p>Review by {review.nickname}</p>
+                              {/* <p>{review.created_at}</p> */}
+                            </li>
+                          </ol>
+                        );
+                      })}
+                    </div>
+                  )
+                }
+              >
+                Reviews
+              </button>
+              <div>{selectedButton && <p>{displayText}</p>}</div>
             </div>
           </div>
         ))

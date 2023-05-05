@@ -20,7 +20,7 @@
 
 //   useEffect(() => {
 //     ApiUtil(`
-//       query {
+//     query APIDATA {
 //         products(
 //           filter: { sku: { eq: "24-MB03" } }
 //           pageSize: 20
@@ -41,6 +41,17 @@
 //             }
 //             description {
 //               html
+//             }
+//             reviews {
+//               items {
+//                 summary
+//                 ratings_breakdown {
+//                   value
+//                 }
+//                 nickname
+//                 created_at
+//                 text
+//               }
 //             }
 //           }
 //         }
