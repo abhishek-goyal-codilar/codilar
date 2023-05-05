@@ -205,17 +205,21 @@ const Content = () => {
                       {item.reviews.items.map((review, index) => {
                         return (
                           <ol key={index} className="order-list-info">
-                            <li>
+                            <li className="list-item-info">
                               <p className="review-header">{review.summary}</p>
-                              <div className="review-block">
-                                <p className="review-rating">Rating</p>
+                              <div className="c">
+                                <div className="a">
+                                  <p className="review-rating">Rating</p>
+                                </div>
                                 {/* <p>{review.ratings_breakdown.name}</p> */}
-                                <p className="review-description">
-                                  {review.text}
-                                </p>
+                                <div className="b">
+                                  <p className="review-description">
+                                    {review.text}
+                                  </p>
+                                  <p>Review by {review.nickname}</p>
+                                  <p>{review.created_at}</p>
+                                </div>
                               </div>
-                              <p>Review by{review.nickname}</p>
-                              <p>{review.created_at}</p>
                             </li>
                           </ol>
                         );
@@ -227,9 +231,9 @@ const Content = () => {
                 Reviews
               </button>
               <div>
-                {selectedButton && (
-                  <p className="displayPText">{displayText}</p>
-                )}
+                {/* {selectedButton && (
+                )} */}
+                <p className="displayPText">{displayText}</p>
               </div>
             </div>
           </div>
