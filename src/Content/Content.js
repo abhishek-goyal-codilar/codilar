@@ -121,16 +121,17 @@ const Content = () => {
             </div>
             <div>
               <button
-                disabled={disabled}
                 className="product-info-more-button"
                 onClick={() =>
                   handleButtonClick(
                     1,
-                    <div
-                      dangerouslySetInnerHTML={{
-                        __html: item.description.html,
-                      }}
-                    />
+                    <div className="product-info-description">
+                      <div
+                        dangerouslySetInnerHTML={{
+                          __html: item.description.html,
+                        }}
+                      />
+                    </div>
                   )
                 }
               >
@@ -141,31 +142,47 @@ const Content = () => {
                 onClick={() =>
                   handleButtonClick(
                     2,
-                    <div>
+                    <div className="product-info-description">
                       <table>
                         <tbody>
                           <tr>
-                            <th>Activity</th>
-                            <td>
+                            <th className="column-head" scope="row">
+                              Activity
+                            </th>
+                            <td className="column-data" data-th="Activity">
                               Gym, Hiking, Overnight, School, Trail, Travel,
                               Urban
                             </td>
                           </tr>
                           <tr>
-                            <th>Style</th>
-                            <td>Backpack</td>
+                            <th className="column-head" scope="row">
+                              Style
+                            </th>
+                            <td className="column-data" data-th="Activity">
+                              Backpack
+                            </td>
                           </tr>
                           <tr>
-                            <th>Material</th>
-                            <td class="col data">Nylon, Polyester</td>
+                            <th className="column-head" scope="row">
+                              Material
+                            </th>
+                            <td className="column-data" data-th="Activity">
+                              Nylon, Polyester
+                            </td>
                           </tr>
                           <tr>
-                            <th>Strap/Handle</th>
-                            <td class="col data">Adjustable, Double, Padded</td>
+                            <th className="column-head" scope="row">
+                              Strap/Handle
+                            </th>
+                            <td className="column-data" data-th="Activity">
+                              Adjustable, Double, Padded
+                            </td>
                           </tr>
                           <tr>
-                            <th>Features</th>
-                            <td>
+                            <th className="column-head" scope="row">
+                              Features
+                            </th>
+                            <td className="column-data" data-th="Activity">
                               Audio Pocket, Waterproof, Lightweight, Reflective,
                               Laptop Sleeve
                             </td>
@@ -183,20 +200,22 @@ const Content = () => {
                 onClick={() =>
                   handleButtonClick(
                     3,
-                    <div>
-                      <div class="block-title">
-                        <p className="Customer-reviews">Customer Reviews</p>
-                      </div>
-                      {item.reviews.items.map((review) => {
+                    <div className="product-info-description">
+                      <p className="list-item-header">Customer Review</p>
+                      {item.reviews.items.map((review, index) => {
                         return (
-                          <ol>
+                          <ol key={index} className="order-list-info">
                             <li>
-                              <p>{review.summary}</p>
-                              <p>{review.value}</p>
-                              <p>{review.name}</p>
-                              <p>{review.text}</p>
-                              <p>Review by {review.nickname}</p>
-                              {/* <p>{review.created_at}</p> */}
+                              <p className="review-header">{review.summary}</p>
+                              <div className="review-block">
+                                <p className="review-rating">Rating</p>
+                                {/* <p>{review.ratings_breakdown.name}</p> */}
+                                <p className="review-description">
+                                  {review.text}
+                                </p>
+                              </div>
+                              <p>Review by{review.nickname}</p>
+                              <p>{review.created_at}</p>
                             </li>
                           </ol>
                         );
@@ -207,7 +226,11 @@ const Content = () => {
               >
                 Reviews
               </button>
-              <div>{selectedButton && <p>{displayText}</p>}</div>
+              <div>
+                {selectedButton && (
+                  <p className="displayPText">{displayText}</p>
+                )}
+              </div>
             </div>
           </div>
         ))
