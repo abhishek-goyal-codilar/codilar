@@ -121,7 +121,6 @@ const Content = () => {
             </div>
             <div>
               <button
-                // disabled={true}
                 className="product-info-more-button"
                 onClick={() =>
                   handleButtonClick(
