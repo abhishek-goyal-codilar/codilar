@@ -171,10 +171,20 @@ i {
 .displayPText {
   margin-top: 0px;
 }
+.review-rating {
+  padding-right: 10px;
+}
 .c {
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
+}
+.a {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
   justify-content: space-evenly;
+  padding-right: 50px;
 }
 @media only screen and (max-width: 768px) {
   .product-display {

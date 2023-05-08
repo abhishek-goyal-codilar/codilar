@@ -209,7 +209,8 @@ const Content = () => {
                               <p className="review-header">{review.summary}</p>
                               <div className="c">
                                 <div className="a">
-                                  <p className="review-rating">Rating</p>
+                                  <p className="review-rating">Rating </p>
+                                  <i class="fa-solid fa-star"></i>
                                 </div>
                                 {/* <p>{review.ratings_breakdown.name}</p> */}
                                 <div className="b">
