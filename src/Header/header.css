@@ -29,10 +29,15 @@ body {
   flex-direction: row;
   margin-top: 10px;
   margin-bottom: 10px;
+  font-size: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 .header-li {
   list-style-type: none;
-  padding: inherit;
+  /* padding: inherit; */
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 a {

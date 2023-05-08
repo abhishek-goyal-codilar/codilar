@@ -6,7 +6,7 @@ const Content = () => {
   const [data, setData] = useState(null);
   const [selectedButton, setSelectedButton] = useState(null);
   const [displayText, setDisplayText] = useState("");
-  const [disabled, setDisabled] = useState(false);
+  // const [disabled, setDisabled] = useState(false);
 
   const handleButtonClick = (buttonId, text) => {
     setSelectedButton(buttonId);
@@ -121,6 +121,7 @@ const Content = () => {
             </div>
             <div>
               <button
+                // disabled={true}
                 className="product-info-more-button"
                 onClick={() =>
                   handleButtonClick(
