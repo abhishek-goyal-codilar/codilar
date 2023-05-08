@@ -120,6 +120,7 @@ i {
   padding-bottom: 0px;
 }
 .product-info-more-button {
+  cursor: pointer;
   font-weight: 400;
   line-height: 40px;
   color: #6d6d6d;
@@ -130,6 +131,11 @@ i {
   padding: 1px 35px 1px 35px;
   font-size: 14px;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.product-info-more-button:active {
+  background-color: white;
+  color: black;
 }
 
 .product-info-description {

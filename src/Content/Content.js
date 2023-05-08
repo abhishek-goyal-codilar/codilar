@@ -118,21 +118,27 @@ const Content = () => {
             </div>
             <div>
               <button
-                className="product-info-more-button"
+                className={`product-info-more-button ${
+                  activeButton === 1 ? "active" : ""
+                }`}
                 onClick={() => handleButtonClick(1)}
               >
                 Details
               </button>
 
               <button
-                className="product-info-more-button"
+                className={`product-info-more-button ${
+                  activeButton === 2 ? "active" : ""
+                }`}
                 onClick={() => handleButtonClick(2)}
               >
                 More Information
               </button>
 
               <button
-                className="product-info-more-button"
+                className={`product-info-more-button ${
+                  activeButton === 3 ? "active" : ""
+                }`}
                 onClick={() => handleButtonClick(3)}
               >
                 Reviews
