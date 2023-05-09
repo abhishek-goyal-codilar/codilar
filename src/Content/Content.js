@@ -141,7 +141,7 @@ const Content = () => {
                 }`}
                 onClick={() => handleButtonClick(3)}
               >
-                Reviews
+                Reviews (3)
               </button>
 
               <div>
@@ -215,6 +215,7 @@ const Content = () => {
                               <div className="a">
                                 <p className="review-rating">Rating </p>
                                 <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
                               </div>
                               {/* <p>{review.ratings_breakdown.name}</p> */}
                               <div className="b">
@@ -229,6 +230,34 @@ const Content = () => {
                         </ol>
                       );
                     })}
+                    <div className="review-form">
+                      <form>
+                        <p>You're reviewing:</p>
+                        <h2> Crown Summit Backpack</h2>
+                        <div>
+                          <p className="rating-heding">Your Rating*</p>
+                        </div>
+                        <p>Rating</p>
+                        <div>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p className="label-nickname">Nickname *</p>
+                        <input className="input-nickname" />
+                        <p className="label-summary">Summary *</p>
+                        <input className="input-summary" />
+                        <p className="label-review">Review *</p>
+                        <input className="input-review" />
+                        <div>
+                          <button className="submit-review-btn">
+                            Submit Review
+                          </button>
+                        </div>
+                      </form>
+                    </div>
                   </div>
                 )}
               </div>

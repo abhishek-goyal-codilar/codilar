@@ -192,6 +192,64 @@ i {
   justify-content: space-evenly;
   padding-right: 50px;
 }
+
+.input-nickname {
+  background: #fff;
+  background-clip: padding-box;
+  border: 1px solid #c2c2c2;
+  border-radius: 1px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  height: 32px;
+  line-height: 1.42857143;
+  padding: 0 9px;
+  vertical-align: baseline;
+  width: 40%;
+  box-sizing: border-box;
+}
+.input-summary {
+  background: #fff;
+  background-clip: padding-box;
+  border: 1px solid #c2c2c2;
+  border-radius: 1px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  height: 32px;
+  line-height: 1.42857143;
+  padding: 0 9px;
+  vertical-align: baseline;
+  width: 40%;
+  box-sizing: border-box;
+}
+.input-review {
+  background: #fff;
+  background-clip: padding-box;
+  border: 1px solid #c2c2c2;
+  border-radius: 1px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  height: auto;
+  line-height: 10.428571;
+  margin: 0;
+  padding: 10px;
+  vertical-align: baseline;
+  width: 40%;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.submit-review-btn {
+  background: #eee;
+  border: 1px solid #ccc;
+  color: #333;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 7px 15px;
+  margin: 0;
+  margin-top: 40px;
+  border-radius: 4px;
+  font-weight: 600;
+}
 @media only screen and (max-width: 768px) {
   .product-display {
     display: flex;
@@ -233,5 +291,10 @@ i {
   }
   .displayPText {
     margin-top: 0px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .product-info-more-button {
+    width: 100%;
   }
 }

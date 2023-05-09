@@ -54,11 +54,11 @@ const ProductNav = () => {
                     <span>Cars</span>
                   </a>
                 </li>
-                <li className="nav">
+                {/* <li className="nav">
                   <a href="#" className="selector">
                     <span>Mens Fashion</span>
                   </a>
-                </li>
+                </li> */}
               </ul>
               {/* <div class="hamburger">
                 <span class="bar"></span>
